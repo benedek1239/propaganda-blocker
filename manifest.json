@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Propaganda Blocker",
+  "version": "1.0",
+  "description": "Blokkolja a mérgező magyar híroldalakat és Facebookos posztokat, helyette cuki cicákat mutat.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": ["tabs", "scripting", "webNavigation"],
+  "host_permissions": [
+    "*://*.index.hu/*",
+    "*://*.origo.hu/*",
+    "*://*.888.hu/*",
+    "*://*.pestisracok.hu/*",
+    "*://www.facebook.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.facebook.com/*"],
+      "js": ["facebook.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Hirszürő"
+  }
+}
