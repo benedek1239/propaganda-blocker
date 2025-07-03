@@ -2,7 +2,14 @@ const blockedSites = [
   "index.hu",
   "origo.hu",
   "888.hu",
-  "pestisracok.hu"
+  "pestisracok.hu",
+  "magyarnemzet.hu",
+  "mandiner.hu",
+  "hirado.hu",
+  "ripost.hu",
+  "metropol.hu",
+  "www.borsonline.hu",
+  "tenyek.hu"
 ];
 
 chrome.webNavigation.onCompleted.addListener((details) => {

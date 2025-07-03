@@ -1,4 +1,4 @@
-const blockedDomains = ["index.hu", "origo.hu", "888.hu", "pestisracok.hu", "24.hu"];
+const blockedDomains = ["index.hu", "origo.hu", "888.hu", "pestisracok.hu", "24.hu", "magyarnemzet.hu", "mandiner.hu", "hirado.hu", "ripost.hu", "metropol.hu", "www.borsonline.hu", "tenyek.hu"];
 
 const blockedProfiles = [
     "facebook.com/origohirek",
@@ -8,7 +8,6 @@ const blockedProfiles = [
     "facebook.com/pestisracok.pstv",
     "facebook.com/megafonkozpont",
     "facebook.com/fideszhu",
-    "facebook.com/groups/293535385295906",
     "facebook.com/lazarjanosfidesz",
     "facebook.com/24ponthu",
     "facebook.com/menczer.tamas"
