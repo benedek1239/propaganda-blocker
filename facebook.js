@@ -96,9 +96,7 @@ function replaceFeedWithCats(feed) {
     usedFeeds.add(feed);
 }
 
-// 🔍 Poszt vizsgálat és csere
 function scanAndReplace() {
-  // Posztok
   const postsLists = Array.from(document.querySelectorAll('.x1yztbdb.x1n2onr6.xh8yej3.x1ja2u2z')).map(el => {
         const html = el.innerHTML.toLowerCase();
         const text = getAllText(el);
@@ -109,7 +107,6 @@ function scanAndReplace() {
         if (matched) replacePostWithCat(el);
     }); 
 
-    //Kiemeltek
     const feedLists = Array.from(document.querySelectorAll('.x16qb05n.xi7iut8.x1dm3dyd.x1pv694p.x10h3on.x78zum5.xdt5ytf.x1b0wou9.x12nagc.x6ikm8r.x10wlt62.x1n2onr6')).map(el => {
         const html = el.innerHTML.toLowerCase();
         const text = getAllText(el);
